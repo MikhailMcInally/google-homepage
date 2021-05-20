@@ -6,4 +6,162 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: #1f1f1f;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* navbar */
+
+.nav {
+    display: flex;
+    padding: 32.5px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+.nav .left a {
+    margin: 0 10px;
+}
+
+.nav .right a {
+    margin: 0 10px;
+}
+
+.nav .right {
+    display: flex;
+    align-items: center;
+}
+
+.nav .right .apps {
+    margin-top: 2px;
+    border-radius: 50%;
+}
+
+.nav .right .apps:hover {
+    background-color: #f2f2f2;
+}
+
+
+.nav .right .profile {
+    margin: 5px 2px 5px 0;
+}
+
+/* masthead */
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 175px;
+}
+
+/* Google PNG */
+
+.inner-wrapper .logo {
+    height: auto;
+    width: 300px;
+    margin: 10px;
+}
+
+/* Search Form */
+
+ .bar-wrapper {
+    margin: 20px 0 20px 0;  
+    display: flex;
+    align-items: center; 
+    position: relative;
+    border-radius: 25px;
+    width: 600px;
+    height: 50px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.bar-wrapper .search {
+    width: 25px;
+    height: auto;
+    position: absolute;
+    left: 15px;
+    color: rgba(0,0,0,0.1);
+} 
+
+.bar-wrapper input {
+    border-radius: 20px;
+    width: 100%;  
+    font-size: 16px;
+    margin: 0 50px;
+    border: none;
+    outline: none; 
+    background-color: transparent; 
+}
+
+.bar-wrapper:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.button-wrapper a {
+    margin: 5px;
+}
+
+.button-wrapper button {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 5px;
+    line-height: 2.5;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 0.5px solid transparent;
+}
+
+.button-wrapper button:hover {
+    border: 0.5px solid rgba(0,0,0,0.2);
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+/* footer tabs */
+
+footer {
+    background-color: #f2f2f2;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .bottom, footer .top {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+
+}
+
+footer .top {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+footer .bottom {
+    justify-content: space-between;
+}
+
+footer .bottom a {
+    margin-right: 20px;
 }
